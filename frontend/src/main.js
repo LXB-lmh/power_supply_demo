@@ -1,0 +1,11 @@
+/** 前端入口：挂载评估工作台，界面语言用 Element Plus 中文。 */
+import { createApp } from "vue";
+import ElementPlus from "element-plus";
+import zhCn from "element-plus/es/locale/lang/zh-cn";
+import "element-plus/dist/index.css";
+import App from "./App.vue";
+import "./styles.css";
+
+const app = createApp(App);
+app.use(ElementPlus, { locale: zhCn });
+app.mount("#app");

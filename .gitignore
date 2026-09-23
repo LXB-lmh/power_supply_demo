@@ -1,0 +1,48 @@
+# ----- 密钥与本地环境 -----
+.env
+.venv/
+venv/
+env/
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+# ----- 运行时数据（启动后自动生成） -----
+jobs/
+uploads/
+output/
+parse_cache/
+knowledge/chroma/
+
+# ----- 解析/转换临时文件 -----
+parsers/_converted/
+*_converted/
+_tmp_*/
+_tmp_*
+_audit_*/
+_tmp_*.py
+
+# ----- 前端 -----
+frontend/node_modules/
+frontend/dist/
+
+# ----- IDE / 系统 -----
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
